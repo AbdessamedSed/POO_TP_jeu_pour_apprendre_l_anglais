@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorePane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SessionController">
+    <children>
+      <ImageView fitHeight="700.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Game.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="OwnerLabel" layoutX="683.0" layoutY="18.0" text="Owner" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="PlayerNameLabel" layoutX="94.0" layoutY="20.0" text="Name " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="BestOwnScrLabel" layoutX="810.0" layoutY="97.0" prefHeight="20.0" prefWidth="19.0" text="0" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="BestScrLabel" layoutX="810.0" layoutY="62.0" prefHeight="20.0" prefWidth="20.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Button fx:id="NewGameBut" layoutX="246.0" layoutY="570.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #7A09BF; -fx-background-radius: 15px;" text="New Game" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="SaveButton" layoutX="755.0" layoutY="570.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #7A09BF; -fx-background-radius: 15px;" text="Stop and Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="DiceBut" layoutX="75.0" layoutY="488.0" mnemonicParsing="false" style="-fx-background-color: #7A09BF; -fx-background-radius: 10px;" text="Roll Dices" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="Dice1" fitHeight="70.0" fitWidth="70.0" layoutX="45.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/b4.png" />
+         </image></ImageView>
+      <ImageView fx:id="Dice2" fitHeight="70.0" fitWidth="70.0" layoutX="119.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Dice2B.png" />
+         </image></ImageView>
+      <Label fx:id="Sum" layoutX="135.0" layoutY="383.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="DirectoinCase" layoutX="107.0" layoutY="439.0" text="0" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <GridPane fx:id="gridPane" layoutX="5.0" layoutY="140.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+      </GridPane>
+      <Button fx:id="LastSessionBut" layoutX="395.0" layoutY="570.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #7A09BF; -fx-background-radius: 15px;" text="Last Session" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+    </children>
+</AnchorPane>
