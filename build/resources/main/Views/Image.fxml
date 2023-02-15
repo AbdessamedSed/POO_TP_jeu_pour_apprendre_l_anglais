@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="387.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ImageController">
+   <children>
+      <ImageView fitHeight="387.0" fitWidth="405.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Image.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="DefLabel" layoutX="185.0" layoutY="73.0" text="Label" />
+      <Button fx:id="Reponse1" layoutX="58.0" layoutY="161.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="96.0" style="-fx-background-radius: 10px; -fx-background-color: #00BABA;" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="Image1" fitHeight="74.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/1.png" />
+               </image></ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Reponse2" layoutX="244.0" layoutY="161.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="96.0" style="-fx-background-radius: 10px; -fx-background-color: #00BABA;" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="Image2" fitHeight="74.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/2.png" />
+               </image></ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Reponse3" layoutX="58.0" layoutY="260.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="96.0" style="-fx-background-radius: 10px; -fx-background-color: #00BABA;" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="Image3" fitHeight="74.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/3.png" />
+               </image></ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Reponse4" layoutX="244.0" layoutY="260.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="96.0" style="-fx-background-radius: 10px; -fx-background-color: #00BABA;" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="Image4" fitHeight="74.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/4.png" />
+               </image></ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
