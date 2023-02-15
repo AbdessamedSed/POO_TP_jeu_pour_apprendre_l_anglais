@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controllers.FirstPageController">
+    <children>
+        <ImageView fitHeight="700.0" fitWidth="850.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/FirstPage.png"/>
+            </image>
+        </ImageView>
+        <TextField fx:id="BestOwnScore" layoutX="275.0" layoutY="325.0" prefHeight="21.0" prefWidth="255.0"
+                   style="-fx-background-color: white;"/>
+        <TextField fx:id="CurrentCase" layoutX="275.0" layoutY="380.0" prefHeight="21.0" prefWidth="255.0"
+                   style="-fx-background-color: white;"/>
+        <TextField fx:id="BestScore" layoutX="275.0" layoutY="448.0" prefHeight="21.0" prefWidth="255.0"
+                   style="-fx-background-color: white;"/>
+        <TextField fx:id="BestScoreOwner" layoutX="275.0" layoutY="501.0" prefHeight="21.0" prefWidth="255.0"
+                   style="-fx-background-color: white;"/>
+        <TextField fx:id="NameLabel" alignment="CENTER" layoutX="256.0" layoutY="258.0" prefHeight="38.0"
+                   prefWidth="336.0" style="-fx-background-color: white;"/>
+        <Button fx:id="ResumeButton" layoutX="572.0" layoutY="547.0" mnemonicParsing="false" prefHeight="30.0"
+                prefWidth="100.0" text="Resume Game"/>
+        <Button fx:id="NewButton" layoutX="217.0" layoutY="547.0" mnemonicParsing="false" prefHeight="30.0"
+                prefWidth="100.0" text="New  Game"/>
+    </children>
+</AnchorPane>
